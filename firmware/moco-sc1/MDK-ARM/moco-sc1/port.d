@@ -1,0 +1,12 @@
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+moco-sc1\port.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+moco-sc1\port.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+moco-sc1\port.o: ../Core/Inc/FreeRTOSConfig.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+moco-sc1\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

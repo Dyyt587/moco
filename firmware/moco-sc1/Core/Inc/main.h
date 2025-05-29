@@ -28,7 +28,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g4xx_hal.h"
-#include "stm32g4xx_ll_adc.h"
+
 #include "stm32g4xx_ll_i2c.h"
 #include "stm32g4xx_ll_rcc.h"
 #include "stm32g4xx_ll_bus.h"
@@ -71,20 +71,26 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define IA_ADC_PIN_Pin LL_GPIO_PIN_1
+#define IA_ADC_PIN_GPIO_Port GPIOC
+#define IB_ADC_PIN_Pin LL_GPIO_PIN_2
+#define IB_ADC_PIN_GPIO_Port GPIOC
+#define IC_ADC_PIN_Pin LL_GPIO_PIN_3
+#define IC_ADC_PIN_GPIO_Port GPIOC
+#define VOLTAGE_ADC_PIN_Pin LL_GPIO_PIN_0
+#define VOLTAGE_ADC_PIN_GPIO_Port GPIOA
 #define OPA1_P_Pin LL_GPIO_PIN_1
 #define OPA1_P_GPIO_Port GPIOA
 #define OPA1_O_Pin LL_GPIO_PIN_2
 #define OPA1_O_GPIO_Port GPIOA
 #define OPA1_M_Pin LL_GPIO_PIN_3
 #define OPA1_M_GPIO_Port GPIOA
-#define VBUS_SENSE_Pin LL_GPIO_PIN_4
-#define VBUS_SENSE_GPIO_Port GPIOA
+#define OPA2_M_Pin LL_GPIO_PIN_5
+#define OPA2_M_GPIO_Port GPIOA
 #define OPA2_O_Pin LL_GPIO_PIN_6
 #define OPA2_O_GPIO_Port GPIOA
 #define OPA2_P_Pin LL_GPIO_PIN_7
 #define OPA2_P_GPIO_Port GPIOA
-#define OPA2_M_Pin LL_GPIO_PIN_5
-#define OPA2_M_GPIO_Port GPIOC
 #define OPA3_P_Pin LL_GPIO_PIN_0
 #define OPA3_P_GPIO_Port GPIOB
 #define OPA3_O_Pin LL_GPIO_PIN_1
@@ -115,10 +121,6 @@ void Error_Handler(void);
 #define UART_TX_GPIO_Port GPIOA
 #define UART_RX_Pin LL_GPIO_PIN_10
 #define UART_RX_GPIO_Port GPIOA
-#define CAN_RX_Pin LL_GPIO_PIN_11
-#define CAN_RX_GPIO_Port GPIOA
-#define CAN_TX_Pin LL_GPIO_PIN_12
-#define CAN_TX_GPIO_Port GPIOA
 #define SWDIO_Pin LL_GPIO_PIN_13
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin LL_GPIO_PIN_14
@@ -129,6 +131,10 @@ void Error_Handler(void);
 #define ENC_SPI_MOSI_GPIO_Port GPIOB
 #define ENC_SPI_nCS_Pin LL_GPIO_PIN_6
 #define ENC_SPI_nCS_GPIO_Port GPIOB
+#define CAN_RX_Pin LL_GPIO_PIN_8
+#define CAN_RX_GPIO_Port GPIOB
+#define CAN_TX_Pin LL_GPIO_PIN_9
+#define CAN_TX_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
