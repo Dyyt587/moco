@@ -28,7 +28,7 @@
 #define GD_PWM_TIM_PSC (1 - 1)    // Prescaler
 #define GD_PWM_TIM_ARR (4250 - 1) // Auto reload
 // #define GD_PWM_TIM_DTG (0x86)     // Dead-time generator, 0x86 = 1usec @ 140MHz
-#define GD_PWM_TIM_DTG (0xFF)
+#define GD_PWM_TIM_DTG (0x90)
 // #define GD_PWM_TIM_DTG (0x0)
 
 // Main loop timer
