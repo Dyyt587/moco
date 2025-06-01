@@ -1,4 +1,5 @@
 moco-sc1\main.o: ../Core/Src/main.c
+moco-sc1\main.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\main.o: ../Core/Inc/main.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
 moco-sc1\main.o: ../Core/Inc/stm32g4xx_hal_conf.h
@@ -37,6 +38,8 @@ moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
+moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_i2c.h
@@ -53,7 +56,7 @@ moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h
 moco-sc1\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h
-moco-sc1\main.o: ..\User\Inc\parameters.h
+moco-sc1\main.o: ../User/Inc/parameters.h
 moco-sc1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 moco-sc1\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 moco-sc1\main.o: ../Core/Inc/FreeRTOSConfig.h
@@ -69,10 +72,11 @@ moco-sc1\main.o: ../Core/Inc/adc.h
 moco-sc1\main.o: ../Core/Inc/fdcan.h
 moco-sc1\main.o: ../Core/Inc/i2c.h
 moco-sc1\main.o: ../Core/Inc/opamp.h
+moco-sc1\main.o: ../Core/Inc/spi.h
 moco-sc1\main.o: ../Core/Inc/tim.h
 moco-sc1\main.o: ../Core/Inc/usart.h
 moco-sc1\main.o: ../Core/Inc/usb.h
 moco-sc1\main.o: ../Core/Inc/gpio.h
-moco-sc1\main.o: ..\User\Inc\stspin32g4_gate_driver.h
-moco-sc1\main.o: ..\User\Inc\heartbeat.h
-moco-sc1\main.o: ..\User\Inc\stspin32g4.h
+moco-sc1\main.o: ../User/Inc/stspin32g4_gate_driver.h
+moco-sc1\main.o: ../User/Inc/heartbeat.h
+moco-sc1\main.o: ../User/Inc/stspin32g4.h

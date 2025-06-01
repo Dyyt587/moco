@@ -25,12 +25,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stspin32g4_gate_driver.h"
+#include "heartbeat.h"
+#include "stspin32g4.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+extern float vbus_adc;
+uint8_t state=0;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -114,10 +117,23 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+
+
+	//
+		     //
+
+	
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		
+		uint8_t s = get_status();
+    LL_USART_TransmitData8(USART1, s);
+    LL_USART_TransmitData8(USART1, 0x00);
+    //gd_clear_fault();
+    osDelay(500);
+		
+		//spg4_set_pwm(0.5,0.5,0.5);
   }
   /* USER CODE END StartDefaultTask */
 }

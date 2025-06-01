@@ -83,8 +83,6 @@ void Error_Handler(void);
 #define OPA1_P_GPIO_Port GPIOA
 #define OPA1_O_Pin LL_GPIO_PIN_2
 #define OPA1_O_GPIO_Port GPIOA
-#define OPA1_M_Pin LL_GPIO_PIN_3
-#define OPA1_M_GPIO_Port GPIOA
 #define OPA2_M_Pin LL_GPIO_PIN_5
 #define OPA2_M_GPIO_Port GPIOA
 #define OPA2_O_Pin LL_GPIO_PIN_6
@@ -113,6 +111,8 @@ void Error_Handler(void);
 #define GD_INH3_GPIO_Port GPIOE
 #define GD_READY_Pin LL_GPIO_PIN_14
 #define GD_READY_GPIO_Port GPIOE
+#define GD_nFAULT_Pin LL_GPIO_PIN_15
+#define GD_nFAULT_GPIO_Port GPIOE
 #define GD_SCL_Pin LL_GPIO_PIN_8
 #define GD_SCL_GPIO_Port GPIOC
 #define GD_SDA_Pin LL_GPIO_PIN_9
@@ -125,12 +125,8 @@ void Error_Handler(void);
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin LL_GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
-#define ENC_SPI_MISO_Pin LL_GPIO_PIN_4
-#define ENC_SPI_MISO_GPIO_Port GPIOB
-#define ENC_SPI_MOSI_Pin LL_GPIO_PIN_5
-#define ENC_SPI_MOSI_GPIO_Port GPIOB
-#define ENC_SPI_nCS_Pin LL_GPIO_PIN_6
-#define ENC_SPI_nCS_GPIO_Port GPIOB
+#define ENC_SPI_nCS_Pin LL_GPIO_PIN_15
+#define ENC_SPI_nCS_GPIO_Port GPIOA
 #define CAN_RX_Pin LL_GPIO_PIN_8
 #define CAN_RX_GPIO_Port GPIOB
 #define CAN_TX_Pin LL_GPIO_PIN_9

@@ -23,6 +23,7 @@
 #include "fdcan.h"
 #include "i2c.h"
 #include "opamp.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "usb.h"
@@ -65,7 +66,7 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-extern float vbus_adc;
+
 /* USER CODE END 0 */
 
 /**
@@ -105,15 +106,33 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM16_Init();
   MX_USART1_UART_Init();
-  MX_TIM2_Init();
-  MX_TIM8_Init();
   MX_TIM3_Init();
   MX_ADC1_Init();
   MX_USB_PCD_Init();
+  MX_ADC2_Init();
+  MX_SPI3_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-//  heartbeat_init();
-//  spg4_init();
-  gd_init();
+
+//	LL_ADC_INJ_StartConversion(ADC1);
+//	LL_ADC_INJ_StartConversion(ADC2);
+
+
+
+
+
+
+
+
+
+
+	  heartbeat_init();
+	
+	
+ 	  spg4_init();
+		
+	  uint8_t state = gd_init();
+	
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -134,10 +153,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    uint8_t s = get_status();
-    LL_USART_TransmitData8(USART1, s);
-    LL_USART_TransmitData8(USART1, 0x00);
-    gd_clear_fault();
+
 
     //LL_USART_TransmitData8(USART1, (uint8_t)vbus_adc);
 
@@ -158,19 +174,20 @@ void SystemClock_Config(void)
   {
   }
   LL_PWR_EnableRange1BoostMode();
-  LL_RCC_HSE_Enable();
-   /* Wait till HSE is ready */
-  while(LL_RCC_HSE_IsReady() != 1)
+  LL_RCC_HSI_Enable();
+   /* Wait till HSI is ready */
+  while(LL_RCC_HSI_IsReady() != 1)
   {
   }
 
+  LL_RCC_HSI_SetCalibTrimming(64);
   LL_RCC_HSI48_Enable();
    /* Wait till HSI48 is ready */
   while(LL_RCC_HSI48_IsReady() != 1)
   {
   }
 
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE, LL_RCC_PLLM_DIV_4, 85, LL_RCC_PLLR_DIV_2);
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSI, LL_RCC_PLLM_DIV_4, 85, LL_RCC_PLLR_DIV_2);
   LL_RCC_PLL_EnableDomain_SYS();
   LL_RCC_PLL_Enable();
    /* Wait till PLL is ready */

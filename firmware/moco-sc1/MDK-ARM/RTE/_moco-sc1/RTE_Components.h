@@ -9,6 +9,8 @@
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H
 
+/* GorgonMeducer::Utilities:perf_counter:Core&Source@2.4.0 */
+#define __PERF_COUNTER__ 1
 
 
 #endif /* RTE_COMPONENTS_H */

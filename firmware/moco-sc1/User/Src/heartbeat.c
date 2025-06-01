@@ -16,7 +16,7 @@ void heartbeat_init(void)
 
 void heartbeat_handler(void)
 {
-    if (ccr >= (HB_LED_TIM_ARR * 0.8F))
+    if (ccr >= (HB_LED_TIM_ARR * 0.9F))
     {
         dir = -1;
     }

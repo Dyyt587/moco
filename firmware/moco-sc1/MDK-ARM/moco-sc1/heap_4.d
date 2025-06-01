@@ -1,4 +1,5 @@
 moco-sc1\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+moco-sc1\heap_4.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\heap_4.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 moco-sc1\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 moco-sc1\heap_4.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

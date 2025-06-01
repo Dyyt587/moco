@@ -20,15 +20,15 @@
 // #include "stm32g4xx_ll_usart.h"
 // #include "stm32g4xx_ll_gpio.h"
 
-#define SYSCLK_HZ (140000000U)
-#define SYSCLK_MHZ (140U)
+#define SYSCLK_HZ (170000000U)
+#define SYSCLK_MHZ (170U)
 
 // STSPIN32G4 gate driver PWM
 #define GD_PWM_TIM_INST (TIM1)
 #define GD_PWM_TIM_PSC (1 - 1)    // Prescaler
-#define GD_PWM_TIM_ARR (2332 - 1) // Auto reload
+#define GD_PWM_TIM_ARR (4250 - 1) // Auto reload
 // #define GD_PWM_TIM_DTG (0x86)     // Dead-time generator, 0x86 = 1usec @ 140MHz
-#define GD_PWM_TIM_DTG (0x80)
+#define GD_PWM_TIM_DTG (0xFF)
 // #define GD_PWM_TIM_DTG (0x0)
 
 // Main loop timer
@@ -39,7 +39,7 @@
 #define ML_TIM_MS (0.05F)
 
 // Hearbeat LED
-#define HB_LED_TIM_INST (TIM2)
+#define HB_LED_TIM_INST (TIM4)
 #define HB_LED_TIM_PSC (2735 - 1) // Prescaler
 #define HB_LED_TIM_ARR (256 - 1)  // Auto reload
 

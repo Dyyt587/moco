@@ -1,4 +1,5 @@
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c
+moco-sc1\stm32g4xx_ll_adc.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h
@@ -37,6 +38,8 @@ moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_us
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
+moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 moco-sc1\stm32g4xx_ll_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h

@@ -1,4 +1,5 @@
 moco-sc1\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+moco-sc1\tasks.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\tasks.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 moco-sc1\tasks.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 moco-sc1\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h

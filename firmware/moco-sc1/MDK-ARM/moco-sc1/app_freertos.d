@@ -1,4 +1,5 @@
 moco-sc1\app_freertos.o: ../Core/Src/app_freertos.c
+moco-sc1\app_freertos.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\app_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 moco-sc1\app_freertos.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 moco-sc1\app_freertos.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -46,6 +47,8 @@ moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
+moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_i2c.h
@@ -62,6 +65,9 @@ moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h
 moco-sc1\app_freertos.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h
-moco-sc1\app_freertos.o: ..\User\Inc\parameters.h
+moco-sc1\app_freertos.o: ../User/Inc/parameters.h
 moco-sc1\app_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 moco-sc1\app_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+moco-sc1\app_freertos.o: ../User/Inc/stspin32g4_gate_driver.h
+moco-sc1\app_freertos.o: ../User/Inc/heartbeat.h
+moco-sc1\app_freertos.o: ../User/Inc/stspin32g4.h

@@ -1,4 +1,5 @@
 moco-sc1\cmsis_os2.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c
+moco-sc1\cmsis_os2.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\cmsis_os2.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 moco-sc1\cmsis_os2.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 moco-sc1\cmsis_os2.o: C:\Users\80520\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -53,5 +54,7 @@ moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h
 moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h
 moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
+moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 moco-sc1\cmsis_os2.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h

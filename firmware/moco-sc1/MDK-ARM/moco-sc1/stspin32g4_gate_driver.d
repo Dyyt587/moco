@@ -1,4 +1,5 @@
 moco-sc1\stspin32g4_gate_driver.o: ..\User\Src\stspin32g4_gate_driver.c
+moco-sc1\stspin32g4_gate_driver.o: .\RTE\_moco-sc1\Pre_Include_Global.h
 moco-sc1\stspin32g4_gate_driver.o: ../Core/Inc/main.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
 moco-sc1\stspin32g4_gate_driver.o: ../Core/Inc/stm32g4xx_hal_conf.h
@@ -37,6 +38,8 @@ moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
+moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_i2c.h
@@ -53,5 +56,5 @@ moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h
 moco-sc1\stspin32g4_gate_driver.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h
-moco-sc1\stspin32g4_gate_driver.o: ..\User\Inc\parameters.h
-moco-sc1\stspin32g4_gate_driver.o: ..\User\Inc\stspin32g4_gate_driver.h
+moco-sc1\stspin32g4_gate_driver.o: ../User/Inc/parameters.h
+moco-sc1\stspin32g4_gate_driver.o: ../User/Inc/stspin32g4_gate_driver.h

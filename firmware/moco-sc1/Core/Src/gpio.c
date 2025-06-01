@@ -38,10 +38,6 @@
         * Output
         * EVENT_OUT
         * EXTI
-     PC4   ------> ADC2_IN5
-     PB3   ------> SPI3_SCK
-     PB4   ------> SPI1_MISO
-     PB5   ------> SPI1_MOSI
 */
 void MX_GPIO_Init(void)
 {
@@ -59,16 +55,7 @@ void MX_GPIO_Init(void)
   LL_GPIO_ResetOutputPin(GD_WAKE_GPIO_Port, GD_WAKE_Pin);
 
   /**/
-  LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_15);
-
-  /**/
   LL_GPIO_ResetOutputPin(ENC_SPI_nCS_GPIO_Port, ENC_SPI_nCS_Pin);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_4;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = GD_WAKE_Pin;
@@ -85,45 +72,10 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(GD_READY_GPIO_Port, &GPIO_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_15;
+  GPIO_InitStruct.Pin = GD_nFAULT_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_15;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_3;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  GPIO_InitStruct.Alternate = LL_GPIO_AF_6;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = ENC_SPI_MISO_Pin;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  GPIO_InitStruct.Alternate = LL_GPIO_AF_5;
-  LL_GPIO_Init(ENC_SPI_MISO_GPIO_Port, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = ENC_SPI_MOSI_Pin;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  GPIO_InitStruct.Alternate = LL_GPIO_AF_5;
-  LL_GPIO_Init(ENC_SPI_MOSI_GPIO_Port, &GPIO_InitStruct);
+  LL_GPIO_Init(GD_nFAULT_GPIO_Port, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = ENC_SPI_nCS_Pin;
